@@ -123,6 +123,12 @@ footer {
     margin-top: 50px;
 }
 
+footer img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 180px; /*logo da faculdade*/
+}
+
 /*responsividade (como o site reage a diferentes tamanhos de tela)*/
 @media screen and (max-width: 768px) {
     nav {

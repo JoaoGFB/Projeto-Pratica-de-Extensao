@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de Extensão - Mapeamento da Água em Londrina</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,12 +23,15 @@
         <h2>O Problema</h2>
         <p>A escassez de água é um desafio crescente para diversas regiões, incluindo a cidade de Londrina. 
             Estudos apontam que o consumo médio diário de água potável na cidade é de aproximadamente 260 litros por 
-            habitante, resultando em pressão excessiva sobre os recursos hídricos locais (<a href="https://www.uel.br/revistas/atlasambiental/AMBIENTAL/CONDICAO.htm" target="_blank">UEL, 2023</a>). 
+            habitante, resultando em pressão excessiva sobre os recursos hídricos locais 
+            (<a href="https://www.uel.br/revistas/atlasambiental/AMBIENTAL/CONDICAO.htm" target="_blank">UNIVERSIDADE ESTADUAL DE LONDRINA. **Atlas Ambiental de Londrina**: Condição Ambiental. Londrina, [20--].</a>). 
             Além disso, segundo o <em>Atlas Ambiental de Londrina</em>, a cidade enfrenta desafios como: Variações climáticas que impactam a recarga 
             de aquíferos; Redução na vazão de rios importantes, como o Tibagi;
             Áreas com risco de desabastecimento devido à alta demanda e gestão desigual da distribuição.
             O acesso a informações atualizadas sobre a disponibilidade e a qualidade da água é essencial para 
-            a população, especialmente para aqueles diretamente afetados por períodos de desabastecimento.</p>
+            a população, especialmente para aqueles diretamente afetados por períodos de desabastecimento.
+        </p>
+        <div id="imagemLondrina" class="imagem"></div>
         <p>
             A falta de um sistema centralizado que apresente essas informações 
             de forma clara e objetiva dificulta a conscientização e tomada de decisões por parte da população.
@@ -39,7 +42,6 @@
 
     <section id="sobre" class="aparecer">
         <h2>Sobre o Projeto</h2>
-        <div id="imagem" class="imagem"></div>
         <p>
             O nosso projeto é o resultado da UC (Unidade Curricular) de Projeto de Extensão.
             A iniciativa tem como objetivo criar uma plataforma que disponibilize, 
@@ -48,10 +50,14 @@
             A ferramenta permitirá a visualização de dados relevantes, como níveis de reservatórios, 
             qualidade da água e áreas afetadas por desabastecimento. 
         </p>
+        
+        <div class="mapa-container">
+            <div id="mapaLondrina" class="imagem"></div>
+        </div>
         <p>
             O mantenimento dessas informações será feito de maneira dinâmica, fazendo-se uso de uma IA (Inteligência Artificial), 
-            que atualizará dados como falta de água e nível dos reservatórios automaticamente conforme a mudança de seu estado real.
-            A fonte dos dados será proveniente de meios verídicos de informações 
+            que atualizará dados como falta de água e nível dos reservatórios automaticamente conforme a 
+            mudança de seu estado real. A fonte dos dados será proveniente de meios verídicos de informações 
             tais como a própria empresa que faz o saneamento de água da cidade e veículos de imprensa.
         </p>
     </section>
@@ -59,7 +65,7 @@
     <section id="comunidade" class="aparecer">
         <h2>Comunidade</h2>
         <p>
-            O projeto "Mapeamento da Água em Londrina" é voltado principalmente para a população do município, 
+            O projeto <em>Mapeamento da Água em Londrina</em> é voltado principalmente para a população do município, 
             com ênfase nas regiões mais afetadas por crises de abastecimento. 
             A disponibilização de informações centralizadas, confiáveis e de fácil acesso visa auxiliar os 
             cidadãos na compreensão da situação hídrica da cidade, possibilitando o planejamento e um uso 
@@ -88,37 +94,43 @@
         <h2>Equipe</h2>
         <div class="integrantes">
             <div class="integrante">
-                <img src="foto1.jpg" alt="Foto Integrante 1">
-                <p><strong>João Gabriel Ferreira Borges</strong></p>
-                <p>Ciência da Computação</p>
+                <img src="imagens/foto dos integrantes/integrante2.jpg" alt="Gabriel Dorta Marques">
+                <p class="integrante-nome">Gabriel Dorta Marques</p>
+                <p class="integrante-curso">Ciência da Computação</p>
                 <div class="github-icon">
-                    <a href="https://github.com/JoaoGFB" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://github.com/DuertaMar" target="_blank" aria-label="GitHub Gabriel Dorta">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
                 </div>
             </div>
             <div class="integrante">
-                <img src="foto2.jpg" alt="Foto Integrante 2">
-                <p><strong>Gabriel Dorta Marques</strong></p>
-                <p>Ciência da Computação</p>
+                <img src="imagens/foto dos integrantes/integrante1.jpg" alt="João Gabriel Ferreira Borges">
+                <p class="integrante-nome">João Gabriel Ferreira Borges</p>
+                <p class="integrante-curso">Ciência da Computação</p>
                 <div class="github-icon">
-                    <a href="https://github.com/DuertaMar" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://github.com/JoaoGFB" target="_blank" aria-label="GitHub João Gabriel">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
                 </div>
             </div>
             <div class="integrante">
-                <img src="foto3.jpg" alt="Foto Integrante 3">
-                <p><strong>Yuri Lotz Brun</strong></p>
-                <p>Ciência da Computação</p>
+                <img src="imagens/foto dos integrantes/integrante3.jpg" alt="Yuri Lotz Brun">
+                <p class="integrante-nome">Yuri Lotz Brun</p>
+                <p class="integrante-curso">Ciência da Computação</p>
                 <div class="github-icon">
-                    <a href="https://github.com/YuriLotzB" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://github.com/YuriLotzB" target="_blank" aria-label="GitHub Yuri Lotz">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     
     <footer>
-        <img src="unifilLogo.png" alt="Logo UniFil" width="150">
+        <img src="estilo/ícones/unifilLogo.png" alt="Logo UniFil" width="150">
         <p class="footer-text">Projeto de Extensão Mapeamento da Água em Londrina - Centro Universitário Filadélfia (UniFil)</p>
     </footer>
     
-    <script src="portfolio.js"></script>
+    <script src="JavaScript/portfolio.js"></script>
 </body>
 </html>

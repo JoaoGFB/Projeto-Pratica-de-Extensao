@@ -87,6 +87,28 @@ section.visible {
     transform: translateY(0);
 }
 
+/*estilização para os textos <p> */
+p {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+    font-size: 16px; 
+    color: #333333; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+}
+
+/*estilização pro link <p> */
+p a {
+    color: var(--cor-agua-azul-claro); 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+p a:hover {
+    color: var(--cor-agua-azul-esverdeado); /* Muda para o tom esverdeado quando o link é hover */
+}
+
 /*estilização da imagem*/
 #imagem {
     background-image: url('imagemLondrina.jpg');
@@ -107,12 +129,22 @@ section.visible {
     text-align: center;
     min-width: 150px;
 }
-
+.integrantes p {
+    text-align: center;
+}
 .integrante img {
     width: 100px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.integrantes a {
+    color: black;
+}
+.integrantes a:hover {
+    color: var(--cor-agua-azul-claro);
+}
+
 
 /*rodapé*/
 footer {
@@ -122,7 +154,12 @@ footer {
     color: var(--cor-branco);
     margin-top: 50px;
 }
-
+.footer-text {
+    color: white;
+    text-align: center;
+    margin: 10px auto 0;
+    max-width: 800px;
+}
 footer img {
     display: block;
     margin: 0 auto 10px;

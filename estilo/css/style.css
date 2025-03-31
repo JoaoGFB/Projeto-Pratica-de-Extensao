@@ -111,7 +111,7 @@ p a:hover {
 
 /*estilização da imagem*/
 #imagemLondrina {
-    background-image: url("../../imagens/imagens de Londrina/imagemLondrina.jpg");
+    background-image: url("../../imagens/imagens-de-Londrina/imagemLondrina.jpg");
     height: 220px;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@ p a:hover {
     margin: 25px 0;
 }
 #mapaLondrina {
-    background-image: url("../../imagens/imagens de Londrina/mapaLondrina.png");
+    background-image: url("../../imagens/imagens-de-Londrina/mapaLondrina.png");
     height: 300px;
     background-size: contain; 
     background-repeat: no-repeat;

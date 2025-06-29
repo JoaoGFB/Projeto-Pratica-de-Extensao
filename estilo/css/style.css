@@ -89,7 +89,7 @@ section.visible {
 
 /*estilização para os textos <p> */
 p {
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+    font-family: 'Roboto', sans-serif; 
     font-size: 16px; 
     color: #333333; 
     line-height: 1.6; 
@@ -106,7 +106,7 @@ p a {
 }
 
 p a:hover {
-    text-decoration: underline; /* Muda para o tom esverdeado quando o link é hover */
+    text-decoration: underline; /*muda para o tom esverdeado quando o link é hover */
 }
 
 /*estilização da imagem*/
@@ -223,5 +223,96 @@ footer img {
 
     section {
         width: 95%;
+    }
+}
+
+
+.menu-mobile-icon {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1101;
+    font-size: 28px;
+    color: #00FFFF;
+    cursor: pointer;
+}
+
+/* menu mobile inicial - escondido */
+#menuNav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(0, 78, 100, 0.97);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 60px;
+    z-index: 1100;
+}
+
+/* quando expandido, aparece */
+#menuNav.expandido {
+    display: flex;
+}
+
+/* links do menu mobile */
+#menuNav a {
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HOVER nos links */
+#menuNav a:hover {
+    color: var(--cor-agua-azul-esverdeado);
+}
+
+/* estilo responsivo: ícone visível, menu padrão escondido */
+@media screen and (max-width: 768px) {
+    /* mostra o ícone do menu */
+    .menu-mobile-icon {
+        display: block;
+    }
+
+    /* esconde o nav tradicional */
+    nav {
+        display: none;
+    }
+
+    /* mostra apenas o nav expandido se ativado */
+    #menuNav.expandido {
+        display: flex;
+    }
+}
+
+/* para telas grandes, mantém o menu horizontal normal */
+@media screen and (min-width: 769px) {
+    .menu-mobile-icon {
+        display: none;
+    }
+
+    #menuNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        background: rgba(0, 78, 100, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    #menuNav a {
+        padding: 8px 16px;
+        text-align: center;
     }
 }

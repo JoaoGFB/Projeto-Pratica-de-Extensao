@@ -25,3 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
     //chama a função para revelar seções já visíveis 
     revelarAoRolar();
 });
+
+
+// Menu hamburguer toggle
+document.getElementById("menuToggle").addEventListener("click", function () {
+    const menu = document.getElementById("menuNav");
+    menu.classList.toggle("expandido");
+});
+
+// Fechar menu ao clicar em um link (opcional)
+document.querySelectorAll("#menuNav a").forEach(link => {
+    link.addEventListener("click", () => {
+        const menu = document.getElementById("menuNav");
+        menu.classList.remove("expandido");
+    });
+});

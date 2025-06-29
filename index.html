@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="menu-mobile-icon" id="menuToggle">
+        <i class="fa fa-bars"></i>
+    </div>
     <header>
         <h1>Projeto de Extensão HidroCity: <br>Mapeamento da Água em Londrina</h1>
     </header>
-    <nav>
+    <nav id="menuNav">
         <a href="#tema">O Problema</a>
         <a href="#sobre">O Projeto</a>
         <a href="#comunidade">Comunidade</a>
         <a href="#extensao">Extensão Curricular</a>
         <a href="#integrantes">Equipe</a>
+        <a href="#documentacao">Documentação</a>
     </nav>
     
     <section id="tema" class="aparecer">
@@ -127,6 +131,25 @@
         </div>
     </section>
     
+    <section id="documentacao" class="aparecer">
+        <div class="container">
+            <h2 class="titulo">📄 Documentação do Projeto</h2>
+            <p>Documentos de apoio que detalham a arquitetura, casos de uso e visão geral do projeto desenvolvido.</p>
+            <ul class="lista-documentos">
+                <li>
+                    <a href="Arquivos/Extensão-View.pdf" target="_blank" rel="noopener">
+                        Visão do Projeto
+                    </a>
+                </li>
+                <li>
+                    <a href="Arquivos/Extensão-Diagramas-MVP-Workflow.pdf" target="_blank" rel="noopener">
+                        Casos de Uso, MVP e Workflow
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
         <img src="estilo/ícones/unifilLogo.png" alt="Logo UniFil" width="150">
         <p class="footer-text">Projeto de Extensão HidroCity - Centro Universitário Filadélfia (UniFil)</p>
